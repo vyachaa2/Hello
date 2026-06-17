@@ -18,6 +18,10 @@ author = "agent"
 task = "workflow.run"
 args = "Start application"
 
+[[workflows.workflow.tasks]]
+task = "workflow.run"
+args = "Second Bot"
+
 [[workflows.workflow]]
 name = "Start application"
 author = "agent"
@@ -28,3 +32,20 @@ args = "python3.11 start.py"
 
 [workflows.workflow.metadata]
 outputType = "console"
+
+[[workflows.workflow]]
+name = "Second Bot"
+author = "agent"
+
+[[workflows.workflow.tasks]]
+task = "shell.exec"
+args = "python3.11 start2.py"
+
+[workflows.workflow.metadata]
+outputType = "console"
+
+[userenv]
+
+[userenv.shared]
+HIGHRISE_API_TOKEN_2 = "49f683c0877fa2baa874f42c3c64552e904be32f3dbf16c9060e7b21808e9d68"
+HIGHRISE_ROOM_ID_2 = "69d3e0c22794f0a47e38966b"
