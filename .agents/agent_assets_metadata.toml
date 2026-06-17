@@ -1,0 +1,8 @@
+uploads = []
+generated = []
+
+[[outputs]]
+id = "P-ROtE5iqzGreRAjaMdDE"
+uri = "file://highrise_bots.zip"
+type = "unspecified"
+title = "Highrise Bots — полный проект"
